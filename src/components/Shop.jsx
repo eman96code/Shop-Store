@@ -16,19 +16,17 @@ const Shop = () => {
     };
     getProducts();
   }, []);
-
-  // const getProducts=()=>{
-  //   return
-  // }
   return (
     <>
-      <h2>Products</h2>
-      <div className="products d-flex container flex-wrap justify-content-between">
+      <div className="container">
+      <h1>Products</h1>
+      </div>
+      <div className="products d-flex container flex-wrap justify-content-between ">
         {products.map((product) => {
           return (
-            <div className="product-item card col-2">
+            <div className="product-item card ">
               <img src={product.image} alt="" className="card-img-top" />
-              <div className="card-body">
+              <div className="card-body d-flex flex-column align-items-center">
                 <div className="category card-title">{product.category}</div>
                 <div className="description card-text">
                   {product.description}

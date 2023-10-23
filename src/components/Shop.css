@@ -1,11 +1,12 @@
 .product-item {
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin: 10px;
-  padding: 10px;
+  padding: 5px;
+  gap: 5px;
+  max-height: 400px;
 }
 .card-img-top {
-  height: 70%;
+  height: 50%;
 }
 .product-item .description {
   overflow: hidden;
