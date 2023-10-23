@@ -7,6 +7,9 @@ import Donations from './components/Donations'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import TodoForm from './components/todo/ToDoForm';
+import RegisterForm from './components/RegisterForm';
+import LoginForm from './components/LoginForm';
 
 function App() {
   return (
@@ -15,8 +18,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/todoform" element={<TodoForm />} />
           <Route path="/donations" element={<Donations />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/registerForm" element={<RegisterForm />} />
+          <Route path="/loginForm" element={<LoginForm />} />
           <Route path="/Shop/:id" element={<Details/>} />
         </Routes>
     </Router>

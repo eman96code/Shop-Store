@@ -12,10 +12,19 @@ const NavBar = () => {
           <Link to='/about'>About</Link>
         </li>
         <li>
+          <Link to='/ToDoForm'>ToDo</Link>
+        </li>
+        <li>
           <Link to='/donations'>Donations</Link>
         </li>
         <li>
           <Link to='/shop'>Shop</Link>
+        </li>
+        <li>
+          <Link to='/registerForm'>Register</Link>
+        </li>
+        <li>
+          <Link to='/loginForm'>Login</Link>
         </li>
       </ul>
       </div>
